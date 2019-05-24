@@ -15,7 +15,8 @@ module.exports = {
     sidebar:{
       '/guia/':[
         '',
-        'fundamentos'
+        'fundamentos',
+        'github'
       ]
     }
   }
