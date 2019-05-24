@@ -84,11 +84,89 @@ git config --global alias.lg "log --oneline --decorate --all --graph"
 git config --global -e
 ```
 
-::: tip Salir del modo edición
-Para salir del modo edición de la líneas de comando precionar `:q`, en caso de realizar algún cambio sin guardar escribir `:qa`
+**Vim** es el editor de código en la línea de comandos
+
+::: tip Salir del modo edición "Vim"
+Para salir del modo edición de la líneas de comando precionar `:q`, en caso de realizar algún cambio sin guardar escribir `:qa` <br>
+`:q!` también sirve para salir sin guardar
 :::
 
 ``` js
 // Modo lectura sin poder modificar
 git config --global -l
 ```
+
+``` js
+// Realiza el add . y commit más mensaje al mismo tiempo
+git commit -am "más comandos agregados"
+```
+
+``` js
+// Para editar un commit, como por ej: el mensaje
+git commit --amend
+```
+
+:::tip Trucos de editor Vim
+`i` para comenzar a editar <br>
+`esc` para salir del modo edición <br>
+`wq` para guardar y salir <br>
+`q!` salir sin guardar cambios
+:::
+
+## Viajes a través de los commit
+Vamos a conocer como podemos movernos entre los diferentes commit que tengamos registrados, supongamos que tenemos los siguientes commit:
+
+* f82f457 (HEAD -> master) mas comandos agregados
+* f52f3da nuevos comandos en fundamentos.md
+* e4ab8af mi primer commit
+
+``` js
+// Viajamos al commit en específico f52f3da
+git reset --mixed f52f3da
+```
+
+``` js
+// Viajamos al commit en específico f52f3da y eliminamos los cambios futuros
+git reset --hard f52f3da
+```
+
+``` js
+// Muestra todos los cambios incluso si borramos los commit
+git reflog
+```
+
+``` js
+// Viajamos al commit en específico f52f3da y podemos restaurar los archivos
+git reset --hard f52f3da
+```
+
+## Renombrar archivos
+Puede que queramos renombrar un archivo, es recomendable hacerlo directamente en la línea de comandos para registrar los cambios con git.
+
+``` js
+// Cambiar nombre
+git mv nombreOriginal.vue nombreNuevo.vue
+```
+Recuerden hacer el commit para registrar los cambios en git.
+
+## Eliminar archivos
+``` js
+// Cambiar nombre
+git rm nombreArchivo.vue
+```
+También recordar hacer el commit para salgar cambios en git.
+
+## Ignorando Archivos
+Para no hacer seguimiento de carpetas o archivos, debemos crear el siguiente archivo:
+* .gitignore
+<br>
+Su estructura de ejemplo sería así:
+
+```js
+arhivo.js // Ignora el archivo en cuestion
+*.js // Ignora todos los arhivos con extensión .js
+node_modules/ //Ignora toda la carpeta
+```
+
+
+
