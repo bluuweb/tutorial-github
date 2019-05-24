@@ -168,5 +168,38 @@ arhivo.js // Ignora el archivo en cuestion
 node_modules/ //Ignora toda la carpeta
 ```
 
+## Ramas o branch
+Hasta el momento solo hemos trabajado en la rama "master" pero puede que necesitemos crear diferentes ramas para los seguimientos de git.
+
+```js
+// Crea una nueva rama
+git branch nombreRama
+```
+
+```js
+// Nos muestra en que rama estamos
+git branch
+```
+
+```js
+// Nos movemos a la nueva rama
+git checkout nombreRama
+```
+
+Podemos unir la rama master con la nueva, para eso tenemos que estar en la master para ejecutar el siguiente comando:
+
+```js
+// Nos movemos a la nueva rama
+git merge nombreRama
+```
+
+```js
+// Eliminar una rama
+git branch -d nombreRama
+```
+
+::: tip Atajos
+Podemos utilizar `git checkout -b nuevaRama` para crear la nuevaRama y viajar a ella.
+:::
 
 
