@@ -202,4 +202,32 @@ git branch -d nombreRama
 Podemos utilizar `git checkout -b nuevaRama` para crear la nuevaRama y viajar a ella.
 :::
 
+## Tags
+Con los tags podemos hacer versiones de nuestro proyecto.
+
+```js
+// Crear un tags
+git tag versionAlpha -m "versión alpha"
+```
+
+```js
+// Listar tags
+git tag
+```
+
+```js
+// Borrar tags
+git tag -d nombreTags
+```
+
+```js
+// Hacer una versión en un commit anterior ej: f52f3da
+git tag -a nombreTag f52f3da -m "version alpha"
+```
+
+```js
+// Mostrar información del tag
+git show nombreTag
+```
+
 
