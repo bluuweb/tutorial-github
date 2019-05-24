@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Tutorial GIT / GITHUB',
   description: 'Aprende a utilizar GIT / GITHUB',
+  base: '/tutorial-github/',
   locales:{
     '/':{
       lang: 'es-ES'

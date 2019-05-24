@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/git.png
+heroImage: $withBase('/img/git.png')
 actionText: Comenzar →
 actionLink: /guia/
 features:
