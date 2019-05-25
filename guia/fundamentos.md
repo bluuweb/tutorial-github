@@ -140,6 +140,12 @@ git reflog
 git reset --hard f52f3da
 ```
 
+Si no hicimos un commit pero aún así queremos revertir los cambios en un archivo específico podríamos utilizar el siguiente comando:
+
+```
+git checkout -- nombreArchivo.conExtensión
+```
+
 ## Renombrar archivos
 Puede que queramos renombrar un archivo, es recomendable hacerlo directamente en la línea de comandos para registrar los cambios con git.
 
