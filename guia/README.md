@@ -5,3 +5,5 @@ Está guía está diseñada para poder obtener el código del curso de GIT / GIT
 ::: warning Aviso
 Esta guía está en constante actualización, podría no estar completa.
 :::
+
+## ¿Qué es GIT?
