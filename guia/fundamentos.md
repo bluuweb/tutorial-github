@@ -146,6 +146,15 @@ Si no hicimos un commit pero aún así queremos revertir los cambios en un archi
 git checkout -- nombreArchivo.conExtensión
 ```
 
+Si deseamos destruir todos los cambios sin haber realizado un commit podemos utilizar:
+
+```
+git reset --hard
+```
+
+Para mayor información visite: [Click aquí](https://git-scm.com/book/es/v2/Herramientas-de-Git-Reiniciar-Desmitificado)
+
+
 ## Renombrar archivos
 Puede que queramos renombrar un archivo, es recomendable hacerlo directamente en la línea de comandos para registrar los cambios con git.
 
